@@ -1319,7 +1319,7 @@ MonoBehaviour:
   - {fileID: 8117433415721089745, guid: 24314acb6e3f6ed4d8ffacc5521d8534, type: 3}
   - {fileID: 8117433415721089745, guid: 237dc34b6b311d44c8c88a8b1b9758f6, type: 3}
   candyParentTransform: {fileID: 1108957046}
-  candyPrefab: {fileID: 8117433415721089745, guid: cc3cd528918602a419e9f96444538ecf, type: 3}
+  candyManager: {fileID: 795712448}
   shotForce: 560
   shotToruque: 30
   baseWidth: 5
@@ -1337,6 +1337,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 300, y: 0, z: 0}
+--- !u!1 &795712447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 795712449}
+  - component: {fileID: 795712448}
+  m_Layer: 0
+  m_Name: CandyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &795712448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795712447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001910d2fab657443a046b95c198f3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candy: 30
+--- !u!4 &795712449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795712447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &828858429
 GameObject:
   m_ObjectHideFlags: 0
