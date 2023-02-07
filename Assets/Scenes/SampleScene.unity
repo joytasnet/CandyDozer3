@@ -1313,9 +1313,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd0aeeb6b7a74946bb4cb701e2c10eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  candyPrefabs:
+  - {fileID: 8117433415721089745, guid: cc3cd528918602a419e9f96444538ecf, type: 3}
+  - {fileID: 8117433415721089745, guid: 5a5b6856e4b07f44b9c42f0f9fd80a14, type: 3}
+  - {fileID: 8117433415721089745, guid: 24314acb6e3f6ed4d8ffacc5521d8534, type: 3}
+  - {fileID: 8117433415721089745, guid: 237dc34b6b311d44c8c88a8b1b9758f6, type: 3}
+  candyParentTransform: {fileID: 1108957046}
   candyPrefab: {fileID: 8117433415721089745, guid: cc3cd528918602a419e9f96444538ecf, type: 3}
   shotForce: 560
   shotToruque: 30
+  baseWidth: 5
 --- !u!4 &724726179
 Transform:
   m_ObjectHideFlags: 0
