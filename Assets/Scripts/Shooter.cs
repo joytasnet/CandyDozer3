@@ -8,12 +8,17 @@ public class Shooter : MonoBehaviour
     const int RecoverySeconds=3;
 
     int shotPower=MaxShotPower;
+    AudioSource shotSound;
     public GameObject[] candyPrefabs;
     public Transform candyParentTransform;
     public CandyManager candyManager;
     public float shotForce;
     public float shotToruque;
     public float baseWidth;
+
+    void Start(){
+        shotSound=GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -47,6 +52,7 @@ public class Shooter : MonoBehaviour
 
         candyManager.ConsumeCandy();
         ConsumePower();
+        shotSound.Play();
     }
     void OnGUI(){
         GUI.color=Color.black;
